@@ -15,7 +15,7 @@ public class CRID {
     /**
      * Number of hops to reach the current node
      */
-    private List<String> hopsToReach = Lists.newArrayList();
+    private List<String> pathFromRoot = Lists.newArrayList();
 
     public Integer getRootId() {
         return rootId;
@@ -26,17 +26,17 @@ public class CRID {
         return this;
     }
 
-    public List<String> getHopsToReach() {
-        return hopsToReach;
+    public List<String> getPathFromRoot() {
+        return pathFromRoot;
     }
 
-    public CRID setHopsToReach(List<String> hopsToReach) {
-        this.hopsToReach = hopsToReach;
+    public CRID setPathFromRoot(List<String> pathFromRoot) {
+        this.pathFromRoot = pathFromRoot;
         return this;
     }
 
     public CRID addHop(String hop) {
-        this.hopsToReach.add(hop);
+        this.pathFromRoot.add(hop);
         return this;
     }
 }
